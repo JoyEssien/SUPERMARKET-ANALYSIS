@@ -23,6 +23,10 @@ PROGRESQL: used for writing queries and manipulating data.
 
 POWER BI:  for visualization and building dashboard.
 
+### Dataset: ![Uploading supermarket_sales_dataset.csv…]()
+
+
+
 ## FINDINGS
 
 ### Overall Sales Performance
