@@ -98,6 +98,7 @@ Cash and E-wallet transactions dominate, with a slight preference for cash.
 
   - Number of Products: The dashboard indicates the supermarket carries a range of products across six major categories.
 
+
 ## RECOMMENDATION
 
   - **Focus on Top Products**: Expand successful categories like Food and Beverages and reassess underperformers like Health and Beauty.
