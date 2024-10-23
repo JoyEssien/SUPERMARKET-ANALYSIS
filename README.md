@@ -5,6 +5,9 @@
 
 This project involves a comprehensive analysis of a supermarket's sales performance over one year, focusing on six product lines across three cities and three branches. The goal is to provide actionable insights into revenue distribution, customer loyalty, and strategic investment.
 
+ ![Screenshot 2024-10-14 145704](https://github.com/user-attachments/assets/ebbe465f-ae10-4276-8fe4-cf738fc36c0e)
+
+
 ### Key Objectives:
  - Annual Revenue Overview: Analyze the total revenue generated over the past year, broken down by product line, region, and branch.
  - Regional and Branch Revenue Analysis: Determine which cities and branches are the top performers in terms of sales and revenue, identifying opportunities for expansion or improvement.
