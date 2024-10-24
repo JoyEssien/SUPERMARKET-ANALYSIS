@@ -23,10 +23,6 @@ PROGRESQL: used for writing queries and manipulating data.
 
 POWER BI:  for visualization and building dashboard.
 
-### Dataset: ![Uploading supermarket_sales_dataset.csv…]()
-
-
-
 ## FINDINGS
 
 ### Overall Sales Performance
@@ -86,6 +82,30 @@ The dashboard includes a map showing total revenue by city across different regi
   
 *Members* purchased more products and contributed slightly more to the total revenue.
 
+*Some interesting sql synax*
+
+```sql
+
+SELECT DISTINCT invoice_id, customer_type, gender, quantity, rating_rate,
+	ROUND(SUM(total),0) AS total_revenue
+FROM supermarket_sales
+GROUP BY invoice_id, customer_type, gender, quantity, rating_rate
+ORDER BY total_revenue DESC
+LIMIT 10;
+
+SELECT invoice_id, customer_type, 
+	   ROUND(AVG(total),0) AS average_total
+FROM supermarket_sales
+WHERE rating_rate = '5_stars'
+AND customer_type = 'Member' 
+GROUP BY invoice_id, customer_type
+HAVING ROUND(AVG(total),0) >200
+ORDER BY average_total DESC
+LIMIT 50;
+
+```
+
+
 
 ### Payment method analysis
 
@@ -98,6 +118,18 @@ The revenue distribution across different payment methods shows:
   - Credit Card: $100K
  
 Cash and E-wallet transactions dominate, with a slight preference for cash.
+
+Used SQL syntax
+
+```sql
+
+SELECT payment,
+	COUNT (payment) AS payment_count
+FROM supermarket_sales
+GROUP BY payment
+ORDER BY payment_count DESC;
+
+```
 
 ### Additional metrics
  
